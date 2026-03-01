@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram/screens/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,15 +12,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+        brightness: Brightness.dark,
+        fontFamily: 'Inter',
+        scaffoldBackgroundColor: const Color(0xFF0C1014),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const SplashScreen(),
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-
   const MyHomePage({super.key, required this.title});
   final String title;
 
